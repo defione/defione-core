@@ -18,7 +18,9 @@
   ],
   "dependencies": {
     "@openzeppelin/contracts": "^3.1.0",
-    "@openzeppelin/test-helpers": "^0.5.11"
+    "@openzeppelin/test-helpers": "^0.5.11",
+    "@truffle/hdwallet-provider": "^2.0.0",
+    "truffle": "5.1.42"
   },
   "bugs": {
     "url": "https://github.com/defione/defione-core/issues"
