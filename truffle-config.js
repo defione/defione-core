@@ -35,10 +35,11 @@ module.exports = {
    */
   networks: {
     harmony: {
-	    provider: () => new HDWalletProvider(mnemonic, 'https://api.harmony.one'),
+	    provider: () => new HDWalletProvider(mnemonic, 'https://harmony-0-rpc.gateway.pokt.network'), //https://api.harmony.one
 	    network_id: 1666600000,
-	    gas: 80000000,
+	    gas: 50000000,
 	    gasPrice: 500000000000,
+	    confirmations: 2,
 	    skipDryRun: true
     }
     // Useful for testing. The `development` name is special - truffle uses it by default

@@ -16,7 +16,7 @@ contract delegateContract is Ownable{
 	address public done = 0x2eFb50049C2dB2309934f1Cc48fE1163C5607b77;
 	address public weth = 0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a;
 
-	IUniswapV2Factory public immutable factory = IUniswapV2Factory(0x621B6047421FA65fA8E584fbAf0B77A5efeE6873);
+	IUniswapV2Factory public immutable factory = IUniswapV2Factory(0xc77C11b0374861C59da20101C972c2fF63C90E8A);
 
 	struct delegatorData {
 	   address delegatorAddr;
