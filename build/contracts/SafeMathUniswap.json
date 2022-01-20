@@ -1,16 +1,16 @@
 {
   "contractName": "SafeMathUniswap",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/opt/defione/defione-core/contracts/uniswapv2/libraries/SafeMath.sol\":\"SafeMathUniswap\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/opt/defione/defione-core/contracts/uniswapv2/libraries/SafeMath.sol\":{\"keccak256\":\"0x3e902db3b255606714f908541582e5ff7a577dbc7c6089b16a01f2456ce57d60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4c92d4f52ea4c3aa763f17f7c0aed5201bc7dfbf0ea3c57cc5e80c1bfb593091\",\"dweb:/ipfs/QmTJWSFCZkj7U7xRYvH1wiR2gGYevnivihzGKhCJrcxX8B\"]}},\"version\":1}",
-  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220aa8e5dcf6cb60254a6e543bbee2114e7a2994772b049906d1b089607700658f664736f6c634300060c0033",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220aa8e5dcf6cb60254a6e543bbee2114e7a2994772b049906d1b089607700658f664736f6c634300060c0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/opt/1defione/defione-core/contracts/uniswapv2/libraries/SafeMath.sol\":\"SafeMathUniswap\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/opt/1defione/defione-core/contracts/uniswapv2/libraries/SafeMath.sol\":{\"keccak256\":\"0x3e902db3b255606714f908541582e5ff7a577dbc7c6089b16a01f2456ce57d60\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4c92d4f52ea4c3aa763f17f7c0aed5201bc7dfbf0ea3c57cc5e80c1bfb593091\",\"dweb:/ipfs/QmTJWSFCZkj7U7xRYvH1wiR2gGYevnivihzGKhCJrcxX8B\"]}},\"version\":1}",
+  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122023dbdb45cf5453c1c3da7f042ea0a4ea0334f89e1b0d7c5f9cb4799f5e852e7d64736f6c634300060c0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122023dbdb45cf5453c1c3da7f042ea0a4ea0334f89e1b0d7c5f9cb4799f5e852e7d64736f6c634300060c0033",
   "immutableReferences": {},
   "sourceMap": "171:449:40:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "171:449:40:-:0;;;;;;;;",
   "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity =0.6.12;\r\n\r\n// a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)\r\n\r\nlibrary SafeMathUniswap {\r\n    function add(uint x, uint y) internal pure returns (uint z) {\r\n        require((z = x + y) >= x, 'ds-math-add-overflow');\r\n    }\r\n\r\n    function sub(uint x, uint y) internal pure returns (uint z) {\r\n        require((z = x - y) <= x, 'ds-math-sub-underflow');\r\n    }\r\n\r\n    function mul(uint x, uint y) internal pure returns (uint z) {\r\n        require(y == 0 || (z = x * y) / y == x, 'ds-math-mul-overflow');\r\n    }\r\n}\r\n",
-  "sourcePath": "/opt/defione/defione-core/contracts/uniswapv2/libraries/SafeMath.sol",
+  "sourcePath": "/opt/1defione/defione-core/contracts/uniswapv2/libraries/SafeMath.sol",
   "ast": {
-    "absolutePath": "/opt/defione/defione-core/contracts/uniswapv2/libraries/SafeMath.sol",
+    "absolutePath": "/opt/1defione/defione-core/contracts/uniswapv2/libraries/SafeMath.sol",
     "exportedSymbols": {
       "SafeMathUniswap": [
         11318
@@ -1081,7 +1081,7 @@
     "src": "35:587:40"
   },
   "legacyAST": {
-    "absolutePath": "/opt/defione/defione-core/contracts/uniswapv2/libraries/SafeMath.sol",
+    "absolutePath": "/opt/1defione/defione-core/contracts/uniswapv2/libraries/SafeMath.sol",
     "exportedSymbols": {
       "SafeMathUniswap": [
         11318
@@ -2157,7 +2157,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.4",
-  "updatedAt": "2022-01-20T03:32:03.792Z",
+  "updatedAt": "2022-01-20T06:52:13.864Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

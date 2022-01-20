@@ -1,16 +1,16 @@
 {
   "contractName": "UQ112x112",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/opt/defione/defione-core/contracts/uniswapv2/libraries/UQ112x112.sol\":\"UQ112x112\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/opt/defione/defione-core/contracts/uniswapv2/libraries/UQ112x112.sol\":{\"keccak256\":\"0x945d843c7e977e0daa24c8cb541be870b099abf2a06be59534d21dd66b1f385b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d7059a55f98a39352b5bf2e737bf7d67d175f23982000502ca56811018cceca1\",\"dweb:/ipfs/QmPLscE4CBdPQ3hHa4Ewx5C4bbWqW1NiCoSweZmyidEDZk\"]}},\"version\":1}",
-  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212204f1a78b76463304c385ccb823c016d6cc4c87578cce90e54612ce3c649a3920664736f6c634300060c0033",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212204f1a78b76463304c385ccb823c016d6cc4c87578cce90e54612ce3c649a3920664736f6c634300060c0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/opt/1defione/defione-core/contracts/uniswapv2/libraries/UQ112x112.sol\":\"UQ112x112\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/opt/1defione/defione-core/contracts/uniswapv2/libraries/UQ112x112.sol\":{\"keccak256\":\"0x945d843c7e977e0daa24c8cb541be870b099abf2a06be59534d21dd66b1f385b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d7059a55f98a39352b5bf2e737bf7d67d175f23982000502ca56811018cceca1\",\"dweb:/ipfs/QmPLscE4CBdPQ3hHa4Ewx5C4bbWqW1NiCoSweZmyidEDZk\"]}},\"version\":1}",
+  "bytecode": "0x60566023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220be879040c53baf31647c206b31cde3f604439a7da094fee02d89556136810ae364736f6c634300060c0033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220be879040c53baf31647c206b31cde3f604439a7da094fee02d89556136810ae364736f6c634300060c0033",
   "immutableReferences": {},
   "sourceMap": "225:406:42:-:0;;;;;;;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "225:406:42:-:0;;;;;;;;",
   "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity =0.6.12;\r\n\r\n// a library for handling binary fixed point numbers (https://en.wikipedia.org/wiki/Q_(number_format))\r\n\r\n// range: [0, 2**112 - 1]\r\n// resolution: 1 / 2**112\r\n\r\nlibrary UQ112x112 {\r\n    uint224 constant Q112 = 2**112;\r\n\r\n    // encode a uint112 as a UQ112x112\r\n    function encode(uint112 y) internal pure returns (uint224 z) {\r\n        z = uint224(y) * Q112; // never overflows\r\n    }\r\n\r\n    // divide a UQ112x112 by a uint112, returning a UQ112x112\r\n    function uqdiv(uint224 x, uint112 y) internal pure returns (uint224 z) {\r\n        z = x / uint224(y);\r\n    }\r\n}\r\n",
-  "sourcePath": "/opt/defione/defione-core/contracts/uniswapv2/libraries/UQ112x112.sol",
+  "sourcePath": "/opt/1defione/defione-core/contracts/uniswapv2/libraries/UQ112x112.sol",
   "ast": {
-    "absolutePath": "/opt/defione/defione-core/contracts/uniswapv2/libraries/UQ112x112.sol",
+    "absolutePath": "/opt/1defione/defione-core/contracts/uniswapv2/libraries/UQ112x112.sol",
     "exportedSymbols": {
       "UQ112x112": [
         11522
@@ -599,7 +599,7 @@
     "src": "35:598:42"
   },
   "legacyAST": {
-    "absolutePath": "/opt/defione/defione-core/contracts/uniswapv2/libraries/UQ112x112.sol",
+    "absolutePath": "/opt/1defione/defione-core/contracts/uniswapv2/libraries/UQ112x112.sol",
     "exportedSymbols": {
       "UQ112x112": [
         11522
@@ -1193,7 +1193,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.4",
-  "updatedAt": "2022-01-20T03:32:03.795Z",
+  "updatedAt": "2022-01-20T06:52:13.866Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

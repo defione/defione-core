@@ -30,16 +30,16 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"uniswapV2Call\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/opt/defione/defione-core/contracts/uniswapv2/interfaces/IUniswapV2Callee.sol\":\"IUniswapV2Callee\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/opt/defione/defione-core/contracts/uniswapv2/interfaces/IUniswapV2Callee.sol\":{\"keccak256\":\"0x60615581108606075743481a37f2a2063b67eaab251dc82d6d49205743cda4aa\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://83fab16b8daf94f6098ae5d315b7274c2971cc49ba947d390b2e6319014d95b8\",\"dweb:/ipfs/QmQAHSKzftBT3zNQnwgjBwymdHpheRd5CWQF7i4cPSGx3K\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"uniswapV2Call\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/opt/1defione/defione-core/contracts/uniswapv2/interfaces/IUniswapV2Callee.sol\":\"IUniswapV2Callee\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/opt/1defione/defione-core/contracts/uniswapv2/interfaces/IUniswapV2Callee.sol\":{\"keccak256\":\"0x60615581108606075743481a37f2a2063b67eaab251dc82d6d49205743cda4aa\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://83fab16b8daf94f6098ae5d315b7274c2971cc49ba947d390b2e6319014d95b8\",\"dweb:/ipfs/QmQAHSKzftBT3zNQnwgjBwymdHpheRd5CWQF7i4cPSGx3K\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity >=0.5.0;\r\n\r\ninterface IUniswapV2Callee {\r\n    function uniswapV2Call(address sender, uint amount0, uint amount1, bytes calldata data) external;\r\n}\r\n",
-  "sourcePath": "/opt/defione/defione-core/contracts/uniswapv2/interfaces/IUniswapV2Callee.sol",
+  "sourcePath": "/opt/1defione/defione-core/contracts/uniswapv2/interfaces/IUniswapV2Callee.sol",
   "ast": {
-    "absolutePath": "/opt/defione/defione-core/contracts/uniswapv2/interfaces/IUniswapV2Callee.sol",
+    "absolutePath": "/opt/1defione/defione-core/contracts/uniswapv2/interfaces/IUniswapV2Callee.sol",
     "exportedSymbols": {
       "IUniswapV2Callee": [
         10328
@@ -225,7 +225,7 @@
     "src": "35:164:32"
   },
   "legacyAST": {
-    "absolutePath": "/opt/defione/defione-core/contracts/uniswapv2/interfaces/IUniswapV2Callee.sol",
+    "absolutePath": "/opt/1defione/defione-core/contracts/uniswapv2/interfaces/IUniswapV2Callee.sol",
     "exportedSymbols": {
       "IUniswapV2Callee": [
         10328
@@ -416,7 +416,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.4",
-  "updatedAt": "2022-01-20T03:32:03.784Z",
+  "updatedAt": "2022-01-20T06:52:13.855Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

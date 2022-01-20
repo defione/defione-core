@@ -28,16 +28,16 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"pendingOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/opt/defione/defione-core/contracts/Ownable.sol\":\"OwnableData\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/opt/defione/defione-core/contracts/Ownable.sol\":{\"keccak256\":\"0x3fc30525ecc94ec716edc6ccea774a22f2c44e4447c3fd20ac1c6a20e90d14e7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://269e7a1054359bde3f301ec7be8015f68cf29693dd092309d914e67b1decf65a\",\"dweb:/ipfs/QmX7QLQheGFLJXmH5S32RJcrCQbboL9Ks7dMF5DnmhXaB1\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b5060b38061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80638da5cb5b146037578063e30c3978146059575b600080fd5b603d605f565b604080516001600160a01b039092168252519081900360200190f35b603d606e565b6000546001600160a01b031681565b6001546001600160a01b03168156fea264697066735822122091b599accf11f3eb2dd75e3879e90d13bfe730ed0dea1720ec9652a72fc0420464736f6c634300060c0033",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80638da5cb5b146037578063e30c3978146059575b600080fd5b603d605f565b604080516001600160a01b039092168252519081900360200190f35b603d606e565b6000546001600160a01b031681565b6001546001600160a01b03168156fea264697066735822122091b599accf11f3eb2dd75e3879e90d13bfe730ed0dea1720ec9652a72fc0420464736f6c634300060c0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"pendingOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/opt/1defione/defione-core/contracts/Ownable.sol\":\"OwnableData\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/opt/1defione/defione-core/contracts/Ownable.sol\":{\"keccak256\":\"0x3fc30525ecc94ec716edc6ccea774a22f2c44e4447c3fd20ac1c6a20e90d14e7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://269e7a1054359bde3f301ec7be8015f68cf29693dd092309d914e67b1decf65a\",\"dweb:/ipfs/QmX7QLQheGFLJXmH5S32RJcrCQbboL9Ks7dMF5DnmhXaB1\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060b38061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80638da5cb5b146037578063e30c3978146059575b600080fd5b603d605f565b604080516001600160a01b039092168252519081900360200190f35b603d606e565b6000546001600160a01b031681565b6001546001600160a01b03168156fea26469706673582212209fdda1603d4660ba036897ea1fd4c2fd0b4b3c4da3a2e70baa4355ddf636509764736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80638da5cb5b146037578063e30c3978146059575b600080fd5b603d605f565b604080516001600160a01b039092168252519081900360200190f35b603d606e565b6000546001600160a01b031681565b6001546001600160a01b03168156fea26469706673582212209fdda1603d4660ba036897ea1fd4c2fd0b4b3c4da3a2e70baa4355ddf636509764736f6c634300060c0033",
   "immutableReferences": {},
   "sourceMap": "296:126:9:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "296:126:9:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;344:20;;;:::i;:::-;;;;-1:-1:-1;;;;;344:20:9;;;;;;;;;;;;;;391:27;;;:::i;344:20::-;;;-1:-1:-1;;;;;344:20:9;;:::o;391:27::-;;;-1:-1:-1;;;;;391:27:9;;:::o",
   "source": "// SPDX-License-Identifier: MIT\r\n// Audit on 5-Jan-2021 by Keno and BoringCrypto\r\n\r\n// P1 - P3: OK\r\npragma solidity 0.6.12;\r\n\r\n// Source: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol + Claimable.sol\r\n// Edited by BoringCrypto\r\n\r\n// T1 - T4: OK\r\ncontract OwnableData {\r\n    // V1 - V5: OK\r\n    address public owner;\r\n    // V1 - V5: OK\r\n    address public pendingOwner;\r\n}\r\n\r\n// T1 - T4: OK\r\ncontract Ownable is OwnableData {\r\n    // E1: OK\r\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\r\n\r\n    constructor () internal {\r\n        owner = msg.sender;\r\n        emit OwnershipTransferred(address(0), msg.sender);\r\n    }\r\n\r\n    // F1 - F9: OK\r\n    // C1 - C21: OK\r\n    function transferOwnership(address newOwner, bool direct, bool renounce) public onlyOwner {\r\n        if (direct) {\r\n            // Checks\r\n            require(newOwner != address(0) || renounce, \"Ownable: zero address\");\r\n\r\n            // Effects\r\n            emit OwnershipTransferred(owner, newOwner);\r\n            owner = newOwner;\r\n            pendingOwner = address(0);\r\n        } else {\r\n            // Effects\r\n            pendingOwner = newOwner;\r\n        }\r\n    }\r\n\r\n    // F1 - F9: OK\r\n    // C1 - C21: OK\r\n    function claimOwnership() public {\r\n        address _pendingOwner = pendingOwner;\r\n\r\n        // Checks\r\n        require(msg.sender == _pendingOwner, \"Ownable: caller != pending owner\");\r\n\r\n        // Effects\r\n        emit OwnershipTransferred(owner, _pendingOwner);\r\n        owner = _pendingOwner;\r\n        pendingOwner = address(0);\r\n    }\r\n\r\n    // M1 - M5: OK\r\n    // C1 - C21: OK\r\n    modifier onlyOwner() {\r\n        require(msg.sender == owner, \"Ownable: caller is not the owner\");\r\n        _;\r\n    }\r\n}\r\n",
-  "sourcePath": "/opt/defione/defione-core/contracts/Ownable.sol",
+  "sourcePath": "/opt/1defione/defione-core/contracts/Ownable.sol",
   "ast": {
-    "absolutePath": "/opt/defione/defione-core/contracts/Ownable.sol",
+    "absolutePath": "/opt/1defione/defione-core/contracts/Ownable.sol",
     "exportedSymbols": {
       "Ownable": [
         2787
@@ -1715,7 +1715,7 @@
     "src": "100:1689:9"
   },
   "legacyAST": {
-    "absolutePath": "/opt/defione/defione-core/contracts/Ownable.sol",
+    "absolutePath": "/opt/1defione/defione-core/contracts/Ownable.sol",
     "exportedSymbols": {
       "Ownable": [
         2787
@@ -3398,7 +3398,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.4",
-  "updatedAt": "2022-01-20T03:32:03.680Z",
+  "updatedAt": "2022-01-20T06:52:13.750Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
