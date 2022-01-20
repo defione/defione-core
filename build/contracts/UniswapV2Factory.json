@@ -60,7 +60,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -73,7 +74,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -86,7 +88,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -110,7 +113,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -123,7 +127,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -136,7 +141,8 @@
         }
       ],
       "stateMutability": "pure",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -6291,9 +6297,49 @@
     "name": "solc",
     "version": "0.6.12+commit.27d51765.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "1666600000": {
+      "events": {
+        "0x0d3648bd0f6ba80134a33ba9275ac585d9d315f0ad8355cddefde31afa28d0e9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "token0",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "token1",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "pair",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "PairCreated",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xbB351A28Ea161d2eC2b03Adb80e15E759dd786ad",
+      "transactionHash": "0x18f9c929c280537d7df90e1c7a3b083c4ed5be7b210c60855a4b4ff001c07e9c"
+    }
+  },
   "schemaVersion": "3.2.4",
-  "updatedAt": "2022-01-20T06:52:13.820Z",
+  "updatedAt": "2022-01-20T11:08:32.832Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

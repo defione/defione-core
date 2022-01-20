@@ -8363,7 +8363,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.4",
-  "updatedAt": "2022-01-20T06:52:13.876Z",
+  "updatedAt": "2022-01-20T08:05:37.126Z",
   "devdoc": {
     "details": "Collection of functions related to the address type",
     "kind": "dev",
